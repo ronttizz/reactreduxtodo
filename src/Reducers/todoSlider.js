@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const todoSlicer = createSlice({
+export const todoSlider = createSlice({
   name: "toDo",
   initialState: {
     todoList: [
@@ -29,6 +29,6 @@ export const todoSlicer = createSlice({
   },
 });
 
-export const { addToDo, deleteTodo, editTodo } = todoSlicer.actions;
+export const { addToDo, deleteTodo, editTodo } = todoSlider.actions;
 
-export default todoSlicer.reducer;
+export default todoSlider.reducer;
