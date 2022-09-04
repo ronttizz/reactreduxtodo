@@ -1,9 +1,12 @@
 import "./App.css";
+import AddTodo from "./Components/AddTodo";
+import ListTodo from "./Components/ListTodo";
 
 function App() {
   return (
     <div className="App">
-      <h1>App will be here</h1>
+      <AddTodo />
+      <ListTodo />
     </div>
   );
 }
