@@ -16,7 +16,7 @@ export const todoSlider = createSlice({
       };
       state.todoList.push(newTodoList);
     },
-    deleteTodo: (state, action) => {
+    deleteToDo: (state, action) => {
       let { todoList } = state;
       state.todoList = todoList.filter((item) => item.id !== action.payload.id);
     },
@@ -29,6 +29,6 @@ export const todoSlider = createSlice({
   },
 });
 
-export const { addToDo, deleteTodo, editTodo } = todoSlider.actions;
+export const { addToDo, deleteToDo, editTodo } = todoSlider.actions;
 
 export default todoSlider.reducer;
